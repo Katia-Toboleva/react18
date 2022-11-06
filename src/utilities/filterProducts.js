@@ -4,7 +4,6 @@ const filterProducts = (products, value) => {
   }
 
   return products.filter((product) => {
-    console.log(product.name)
     return (product.name).toLowerCase().includes(value)
   });
 };

@@ -1,0 +1,25 @@
+.filter-container {
+  position: relative;
+  margin: 20px;
+}
+
+.filter {
+  width: 300px;
+  padding: 5px 10px;
+  font-size: 24px;
+  background-color: aliceblue;
+  border: 0;
+}
+
+.filter-spinner {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid turquoise;
+  color: #282c34;
+  font-size: 14px;
+  margin-left: 20px;
+}
