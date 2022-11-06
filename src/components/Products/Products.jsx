@@ -24,10 +24,10 @@ const Products = ({ products = mockProducts }) => {
   };
 
   return (
-    <div>
+    <>
       <Filter onChange={handleFilterChange} isPending={isPending} />
       <ProductList products={filteredProducts} />
-    </div>
+    </>
   )
 };
 

@@ -1,0 +1,11 @@
+.song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-info {
+  font-size: 24px;
+  color: white;
+}
