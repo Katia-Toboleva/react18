@@ -1,28 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense, lazy } from 'react';
 import fetchSong from '../../api/fetchSong';
-import SongInfo from "../SongInfo/SongInfo";
+const SongInfo = lazy(() => import("../SongInfo/SongInfo"));
+import './Song.css';
 
 const Song = () => {
-  const [song, setSong] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
+  const [song, setSong] = useState();
 
   useEffect(() => {    
     fetchSong()
       .then((response) => response.json())
       .then((response) => setSong(response))
       .catch((err) => console.error(err))
-      .finally(() => setIsLoading(false))
     }, []);
 
   return (
-    <>
-    {isLoading ? (
-      <div>Loading...</div>
-    ) : (      
+    <Suspense fallback={<div>Loading...</div>}>
       <SongInfo song={song} />
-    )
-    }
-    </>
+    </Suspense>
   );
 };
 

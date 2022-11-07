@@ -4,9 +4,9 @@ const fetchSong = async () => {
   return fetch(url, {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '1b06a6ad4fmshf2d24a9495c2f47p1720d4jsnd1bde9b897b5',
-      'X-RapidAPI-Host': 'shazam.p.rapidapi.com',
-    },
+      'X-RapidAPI-Key': '4b33b276dcmsh35fc9122f9a82c5p12021fjsn775d3ff8a18f',
+      'X-RapidAPI-Host': 'shazam.p.rapidapi.com'
+    }
   })
 };
 

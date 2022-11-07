@@ -5,6 +5,16 @@
   align-items: center;
 }
 
+.song-image {
+  width: 100px;
+  border-radius: 30px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
 .song-info {
   font-size: 24px;
   color: white;
