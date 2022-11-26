@@ -1,7 +1,7 @@
 import React from "react";
 import './Filter.css';
 
-const Filter = ({ isPending = true, onChange }) => {
+const Filter = ({ isPending = false, onChange }) => {
   return (
     <div className="filter-container">
       <input className="filter" onChange={onChange} />

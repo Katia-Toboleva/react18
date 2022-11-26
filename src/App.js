@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/App.css';
 // import Products from './components/Products/Products';
-import Song from './components/Song/Song';
+import Songs from './components/Songs/Songs';
 
 function App() {
   return (
@@ -11,9 +11,7 @@ function App() {
       </header>
       <div>
         {/* <Products /> */}
-        <div className="list">
-          <Song />
-        </div>
+        <Songs />
       </div>
     </div>
   );

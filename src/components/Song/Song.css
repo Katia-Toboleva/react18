@@ -1,0 +1,22 @@
+.song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px; 
+}
+
+.song-image {
+  width: 100px;
+  border-radius: 30px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.song-info {
+  font-size: 12px;
+  color: white;
+}
