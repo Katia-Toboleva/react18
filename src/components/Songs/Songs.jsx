@@ -15,8 +15,6 @@ const Songs = () => {
       .finally(() => setIsLoading(false))
     }, []);
 
-    console.log(songs, 'song');
-
   return (
     <>
       {isLoading ? (
