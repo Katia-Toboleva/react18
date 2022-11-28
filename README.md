@@ -4,8 +4,8 @@ This repo contains 2 apps: Products and Songs that can be used to practice useTr
 
 ## Commands
 
-`npm i` - To install dependencies
-`npm run start` - To run the app
+1. `npm i` - To install dependencies
+2. `npm run start` - To run the app
 
 ## Available Functionality
 
