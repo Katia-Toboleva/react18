@@ -14,7 +14,7 @@ const Songs = () => {
     }, []);
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>Loading...</div>}>     
       <div className="songs">
       {songs.map((song) => (
         <Song key={song.id} song={song} />

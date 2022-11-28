@@ -13,20 +13,21 @@ const Products = ({ products = mockProducts }) => {
 
   useEffect(() => {
     const newProducts = filterProducts(products, filter);
-    
-    setFilteredProducts(newProducts);
+    // lower priority event
+    startTransition(() => {
+      setFilteredProducts(newProducts);
+    })
   }, [filter])
 
   
   const handleFilterChange = (e) => {
-    startTransition(() => {
-      setFilter(e.target.value);
-    });
+    // high priority event
+    setFilter(e.target.value);
   };
 
   return (
     <>
-      <Filter onChange={handleFilterChange} isPending={isPending} />
+      <Filter onChange={handleFilterChange} isPending={isPending}/>
       <ProductList products={filteredProducts} />
     </>
   )
